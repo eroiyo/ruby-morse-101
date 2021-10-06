@@ -42,7 +42,7 @@ def decode_char(letter)
     return dictionary[letter]
 end
 
-def wordsSeparator(completestring)
+def words_separator(completestring)
     return completestring.split("   ");
 end
 
