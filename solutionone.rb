@@ -51,11 +51,11 @@ def decode_word(array)
     array.each { |n| 
     temp = n.split(" ");
     temp.each{ |m|
-        result = result + decode_char(m);
+        result += decode_char(m);
     }
-    result = result + " ";
+    result += " ";
 }
 puts(result)
 end
 
-decode_word(wordsSeparator(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ..."))
+decode_word(words_separator(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ..."))
